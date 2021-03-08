@@ -7,6 +7,9 @@ let package = Package(
     name: "CFBCAccess",
     pkgConfig: "FBCAccess",
     products: [
-	.library (name: "CFBCAccess", targets: ["CFBCAccess"])
+        .library (name: "CFBCAccess", targets: ["CFBCAccess"])
+    ],
+    targets: [
+        .target (name: "CFBCAccess", dependencies: []),
     ]
 )
